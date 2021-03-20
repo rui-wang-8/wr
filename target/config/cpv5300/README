@@ -1,0 +1,32 @@
+
+                 README: Motorola CPV5300 BSP
+
+This file contains board-specific information for the CPV5300
+target board.  This file describes the method for generating the full
+product documentation, and informs the user of serious caveats, if any,
+that must be noted before using this BSP.  Additionally, the target
+board's Hardware Reference Manuals and Installation Manual provide 
+board-specific information necessary to run VxWorks.  The target's
+hardware documentation should be read fully before this BSP is used.
+
+--------------------------------------------------------------------------------
+
+RELEASE 1.2/2
+	This is the T2.2 release.  The special fei82557End.obj and special
+	smUtilLib.obj objects are no longer required and have been replaced.
+	Default console is the serial port, not the video/keyboard.
+	New variables in sysALib.c: sysCsSuper, sysCsExc,
+	sysCsInt.  New CPUID structure.  Modified rtns sysCpuProbe(),
+	sysIntEoiGet(), new file loApicIntr.c Removed ATA, LPT, and SLIP
+	drivers from default configuration to trim size of bootrom images.
+
+RELEASE 1.2/1:
+	This is the second FCS release for Tornado 2.0.  Changes are primarily
+	cosmetic and  do not change functional behaviour.  The cpv5300 is
+	the base BSP for all the cpv5xxx BSPs. The cpv5000, cpv5350, and
+	cpn5360 now share many files with this BSP.
+
+RELEASE 1.2/0:
+	This is the first release for Tornado 2.0.
+
+

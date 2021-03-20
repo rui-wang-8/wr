@@ -1,0 +1,26 @@
+
+                 README: Motorola CPV5000 BSP
+
+This file contains board-specific information for the CPV5000
+target board.  This file documents BSP interface changes from previous
+software or hardware versions, and informs the user of serious caveats
+that must be noted before using this BSP.  Additionally, the target
+board's reference entry (e.g., man CPV5000 for UNIX or the HTML
+reference entries) provides board-specific information necessary 
+to run VxWorks.  The target reference entry should be read fully 
+before this BSP is used.
+
+--------------------------------------------------------------------------------
+
+RELEASE 1.2/2
+	Release for T2.2.  Default console changed to serial port and not
+	the video/keyboard. New variables in sysALib.c: sysCsSuper, sysCsExc,
+	sysCsInt.  New CPUID structure.  Modified rtns sysCpuProbe(),
+	sysIntEoiGet(), new file loApicIntr.c. Removed ATA, LPT, and SLIP
+	drivers from default configuration to trim size of bootrom images.
+
+
+RELEASE 1.2/1
+	This is the first FCS release of the BSP for WRS. It is based on
+	the early access release 1.2/3.3 (sic) from Motorola MCG.
+
