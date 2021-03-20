@@ -1,0 +1,24 @@
+
+                 README: Motorola CPN5360 VxWorks BSP
+
+This file contains board-specific information for the CPN5360
+target board.  This file describes the method for generating the full
+product documentation, and informs the user of serious caveats, if any,
+that must be noted before using this BSP.  Additionally, the target
+board's reference entry (i.e. man CPN5360 for UNIX or the HTML
+reference entries) provides board-specific information necessary 
+to run VxWorks.  The target reference entry should be read fully 
+before this BSP is used.
+
+--------------------------------------------------------------------------------
+
+RELEASE 1.2/2
+	Release for T2.2. mkbootFlash5360 changed to support binary
+	images only. Changed .s files to use FUNC macros. Reworked
+	config.h file to match cpv5300/config.h more closely. Replaced
+	ideDrv with ataDrv. New CPU_ID structure in sysLib.c.
+
+
+RELEASE 1.2/1
+	This is the first release of the Motorola CPN5360 BSP.
+	It is based on the EAR version 1.2/0.2 from Motorola MCG.
